@@ -24,7 +24,7 @@ meteorhacks:fast-render
 meteorhacks:subs-manager
 meteorhacks:npm
 
-aldeed:autoform
+aldeed:autoform@3.2.0
 aldeed:collection2
 aldeed:simple-schema
 
