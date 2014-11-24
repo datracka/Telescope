@@ -24,7 +24,7 @@ meteorhacks:fast-render
 meteorhacks:subs-manager
 meteorhacks:npm
 
-aldeed:autoform@3.2.0
+aldeed:autoform
 aldeed:collection2
 aldeed:simple-schema
 
@@ -53,13 +53,13 @@ telescope-i18n
 
 # Telescope Packages (Optional)
 
-telescope-theme-base
+# telescope-theme-base
 telescope-module-share
 telescope-api
 telescope-rss
 telescope-search
 telescope-tags
-telescope-theme-hubble
+# telescope-theme-hubble
 telescope-email
 telescope-module-embedly
 telescope-newsletter
@@ -71,3 +71,8 @@ telescope-notifications
 
 # Accounts Templates
 useraccounts:unstyled
+
+# Data For Good
+telescope-d4g
+jeremy:velocity-animate
+percolatestudio:segment.io
