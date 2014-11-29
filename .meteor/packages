@@ -54,7 +54,7 @@ telescope-i18n
 # Telescope Packages (Optional)
 
 # telescope-theme-base
-telescope-module-share
+# telescope-module-share
 telescope-api
 telescope-rss
 telescope-search
@@ -74,5 +74,6 @@ useraccounts:unstyled
 
 # Data For Good
 telescope-d4g
+telescope-d4g-share
 jeremy:velocity-animate
 percolatestudio:segment.io
