@@ -44,6 +44,7 @@ djedi:sanitize-html
 rajit:bootstrap3-datepicker
 bengott:avatar
 jparker:gravatar
+tap:i18n
 
 # Telescope Packages (Required)
 
