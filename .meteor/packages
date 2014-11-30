@@ -65,7 +65,7 @@ telescope-email
 telescope-module-embedly
 telescope-newsletter
 telescope-daily
-telescope-update-prompt
+# telescope-update-prompt
 telescope-kadira
 
 telescope-notifications
