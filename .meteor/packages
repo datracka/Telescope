@@ -46,8 +46,6 @@ rajit:bootstrap3-datepicker
 bengott:avatar
 jparker:gravatar
 tap:i18n
-# CSS reset (Must come before any other css)
-ccan:cssreset
 
 # Telescope Packages (Required)
 
@@ -57,13 +55,13 @@ telescope-i18n
 
 # Telescope Packages (Optional)
 
-telescope-theme-base
-telescope-module-share
+# telescope-theme-base
+# telescope-module-share
 telescope-api
 telescope-rss
 telescope-search
 telescope-tags
-telescope-theme-hubble
+# telescope-theme-hubble
 telescope-email
 telescope-embedly
 telescope-newsletter
@@ -78,4 +76,10 @@ telescope-invites
 useraccounts:unstyled
 telescope-datetimepicker
 tsega:bootstrap3-datetimepicker@3.1.3_1
+
+# DataLook
+telescope-d4g
+telescope-d4g-share
+jeremy:velocity-animate
+percolatestudio:segment.io
 
