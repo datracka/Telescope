@@ -58,9 +58,22 @@ var emailNotifications = {
     optional: true,
     defaultValue: true,
     autoform: {
-      group: 'notifications',
+      group: 'notifications_fieldset',
       instructions: 'Enable email notifications for new posts and new comments (requires restart).'
     }
   }
 }
 addToSettingsSchema.push(emailNotifications);
+
+
+function setNotificationDefaults (user) {
+  // set notifications default preferences
+  user.profile.notifications = {
+    users: false,
+    posts: false,
+    comments: true,
+    replies: true
+  };
+  return user;
+}
+userCreatedCallbacks.push(setNotificationDefaults);
