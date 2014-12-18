@@ -34,7 +34,7 @@ mrt:cookies
 mrt:moment
 mrt:mailchimp
 
-ccan:cssreset # CSS reset (Must come before any other css)
+# ccan:cssreset # CSS reset (Must come before any other css)
 cmather:handlebars-server
 sacha:spin
 sacha:juice
@@ -59,13 +59,13 @@ telescope-i18n
 # Telescope Packages (Optional)
 
 telescope-datetimepicker
-telescope-theme-base
-telescope-module-share
+# telescope-theme-base
+# telescope-module-share
 telescope-api
 telescope-rss
 telescope-search
 telescope-tags
-telescope-theme-hubble
+# telescope-theme-hubble
 telescope-email
 telescope-embedly
 telescope-newsletter
@@ -78,3 +78,8 @@ telescope-invites
 
 # Custom Packages
 
+# DataLook
+telescope-d4g
+telescope-d4g-share
+jeremy:velocity-animate
+percolatestudio:segment.io
