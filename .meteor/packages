@@ -46,6 +46,8 @@ rajit:bootstrap3-datepicker
 bengott:avatar
 jparker:gravatar
 tap:i18n
+useraccounts:unstyled@1.4.0
+tsega:bootstrap3-datetimepicker@3.1.3_1
 
 # Telescope Packages (Required)
 
@@ -55,6 +57,7 @@ telescope-i18n
 
 # Telescope Packages (Optional)
 
+telescope-datetimepicker
 # telescope-theme-base
 # telescope-module-share
 telescope-api
@@ -71,12 +74,8 @@ telescope-kadira
 telescope-notifications
 telescope-singleday
 telescope-invites
+telescope-post-by-feed
 
-# Accounts Templates
-useraccounts:unstyled@1.4.0
-
-telescope-datetimepicker
-tsega:bootstrap3-datetimepicker@3.1.3_1
 
 # DataLook
 telescope-d4g
