@@ -1,3 +1,24 @@
+## v0.11.2 “DummyScope”
+
+**Important: existing newsletters and feeds need to be manually enabled in the Settings panel** 
+
+* Added "Enable Newsletter" setting. Note: existing newsletters must be re-enabled. 
+* Added "Enable Feeds" settings. Note: existing feeds must be re-enabled.
+* Now showing release notes for latest version right inside the app.
+* Added dummy posts, users, and comments.
+* Added new Events collection for keeping track of important events.
+* Log first run event.
+* `MAIL_URL` environment variable can now be set from Settings.
+
+## v0.11.1 “FeedScope”
+
+* Post submit and edit forms now submit to their respective methods directly.
+* Removed `postSubmitRenderedCallbacks` and `postEditRenderedCallbacks`.
+* `telescope-post-by-feed` package now lets you import posts from RSS feeds.
+* Adding limit of 200 posts to post list request.
+* Refactoring post and comment submit to fix latency compensation issues.
+* Tags package now using Autoform. 
+
 ## v0.11.0 “AvatarScope”
 
 * Added new `userCreatedCallbacks` callback hook.

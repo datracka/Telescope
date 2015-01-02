@@ -25,16 +25,15 @@ meteorhacks:fast-render
 meteorhacks:subs-manager
 meteorhacks:npm
 
-aldeed:autoform@4.0.0-rc1
+aldeed:autoform
 aldeed:collection2
 aldeed:simple-schema
 
 mrt:jquery-hotkeys
 mrt:cookies
-mrt:moment
 mrt:mailchimp
 
-# ccan:cssreset # CSS reset (Must come before any other css)
+ccan:cssreset # CSS reset (Must come before any other css)
 cmather:handlebars-server
 sacha:spin
 sacha:juice
@@ -49,6 +48,7 @@ jparker:gravatar
 tap:i18n
 useraccounts:unstyled@1.4.0
 tsega:bootstrap3-datetimepicker@3.1.3_1
+momentjs:moment
 
 # Telescope Packages (Required)
 
@@ -70,13 +70,16 @@ telescope-email
 telescope-embedly
 telescope-newsletter
 telescope-daily
-telescope-update-prompt
+# telescope-update-prompt
 telescope-kadira
 telescope-notifications
 telescope-singleday
 telescope-invites
+telescope-post-by-feed
 
 # Custom Packages
+telescope-releases
+telescope-getting-started
 
 # DataLook
 telescope-d4g
