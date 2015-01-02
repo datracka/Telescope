@@ -43,6 +43,7 @@ viewParameters.search = function (terms, baseParameters) {
     find: {
       $or: [
         {title: {$regex: terms.query, $options: 'i'}},
+        {tagline: {$regex: terms.query, $options: 'i'}},
         {url: {$regex: terms.query, $options: 'i'}},
         {body: {$regex: terms.query, $options: 'i'}}
       ]
