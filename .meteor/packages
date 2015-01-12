@@ -65,24 +65,28 @@ telescope-i18n
 # Telescope Packages (Optional)
 
 telescope-datetimepicker
-telescope-theme-base
-telescope-module-share
+# telescope-theme-base
+# telescope-module-share
 telescope-api
 telescope-rss
 telescope-search
 telescope-tags
-telescope-theme-hubble
+# telescope-theme-hubble
 telescope-email
 telescope-embedly
 telescope-newsletter
 telescope-daily
-telescope-update-prompt
+# telescope-update-prompt
 telescope-kadira
 telescope-notifications
 telescope-singleday
 telescope-invites
 telescope-post-by-feed
 telescope-releases
-telescope-getting-started
+# telescope-getting-started
 
-# Custom Packages
+# DataLook
+telescope-d4g
+telescope-d4g-share
+jeremy:velocity-animate
+percolatestudio:segment.io
