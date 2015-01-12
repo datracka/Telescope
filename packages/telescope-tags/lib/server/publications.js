@@ -1,6 +1,6 @@
 Meteor.publish('categories', function() {
   if(can.viewById(this.userId)){
-    return Categories.find();
+    return Categories.find({}, {sort: { name: 1 }});
   }
   return [];
 });
