@@ -1,4 +1,4 @@
-## v0.11.2 “DummyScope”
+## v0.12.0 “DummyScope”
 
 **Important: existing newsletters and feeds need to be manually enabled in the Settings panel** 
 
@@ -9,6 +9,11 @@
 * Added new Events collection for keeping track of important events.
 * Log first run event.
 * `MAIL_URL` environment variable can now be set from Settings.
+* Renamed `viewNav` to `viewsMenu`.
+* Renamed `adminNav` to `adminMenu`.
+* Improvements to the Post by Feed package.
+* Added tests for nav bar (thanks @anthonymayer!).
+* **New and improved [documentation](http://telesc.pe/docs).**
 
 ## v0.11.1 “FeedScope”
 

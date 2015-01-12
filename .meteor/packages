@@ -16,6 +16,7 @@ accounts-facebook
 service-configuration
 accounts-ui
 reactive-var
+http
 
 # Atmosphere Packages
 
@@ -50,6 +51,11 @@ useraccounts:unstyled@1.4.0
 tsega:bootstrap3-datetimepicker@3.1.3_1
 momentjs:moment
 
+# Testing
+
+# sanjo:jasmine
+# velocity:html-reporter
+
 # Telescope Packages (Required)
 
 telescope-base
@@ -76,10 +82,8 @@ telescope-notifications
 telescope-singleday
 telescope-invites
 telescope-post-by-feed
-
-# Custom Packages
 telescope-releases
-telescope-getting-started
+# telescope-getting-started
 
 # DataLook
 telescope-d4g
