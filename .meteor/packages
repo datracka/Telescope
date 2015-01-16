@@ -68,7 +68,7 @@ telescope-datetimepicker
 # telescope-theme-base
 # telescope-module-share
 telescope-api
-telescope-rss
+# telescope-rss
 telescope-search
 telescope-tags
 # telescope-theme-hubble
@@ -87,6 +87,7 @@ telescope-releases
 
 # DataLook
 telescope-d4g
+telescope-d4g-rss
 telescope-d4g-share
 jeremy:velocity-animate
 percolatestudio:segment.io
