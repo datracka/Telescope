@@ -19,11 +19,6 @@ var dismissBanner = function () {
   });
 }
 
-var validateEmail = function (email) {
-  var regx = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return regx.test(email);
-}
-
 Meteor.startup(function () {
   Template[getTemplate('newsletterBanner')].helpers({
     siteName: function () {
@@ -71,21 +66,18 @@ Meteor.startup(function () {
           alert('Please fill in your email.');
           return
         }
-        if(validateEmail(email)) {
-          $banner.addClass('show-loader');
-          Meteor.call('addEmailToMailChimpList', email, function (error, result) {
-            $banner.removeClass('show-loader');
-            if(error){
-              console.log(error);
-              flashMessage(error.message, "error");
-            }else{
-              console.log(result);
-            }
-          });
-          confirmSubscription();
-        }else{
-          alert('Please enter a valid email.');
-        }
+        $banner.addClass('show-loader');
+        Meteor.call('addEmailToMailChimpList', email, function (error, result) {
+          $banner.removeClass('show-loader');
+          if(error){
+            console.log(error);
+            flashMessage(error.reason, "error");
+          }else{
+            clearSeenMessages();
+            console.log(result);
+            confirmSubscription();
+          }
+        });
       }
       // $('body').addClass('showing-lightbox');
       // $(e.target).parents('.post').find('.post-video-lightbox').fadeIn('fast');
