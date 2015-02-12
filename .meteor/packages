@@ -33,7 +33,7 @@ aldeed:simple-schema
 mrt:jquery-hotkeys
 mrt:cookies
 
-ccan:cssreset # CSS reset (Must come before any other css)
+# ccan:cssreset # CSS reset (Must come before any other css)
 cmather:handlebars-server
 sacha:spin
 sacha:juice
