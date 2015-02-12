@@ -335,11 +335,15 @@ submitPost = function (post) {
     score: 0,
     inactive: false,
     sticky: false,
-    status: getDefaultPostStatus(),
-    postedAt: new Date()
+    status: getDefaultPostStatus()
   };
 
   post = _.extend(defaultProperties, post);
+
+  // if post is approved but doesn't have a postedAt date, give it a default date
+  // note: pending posts get their postedAt date only once theyre approved
+  if (post.status == STATUS_APPROVED && !post.postedAt)
+    post.postedAt = new Date();
 
   // clean up post title
   post.title = cleanUp(post.title);
@@ -425,13 +429,13 @@ Meteor.methods({
     // userId
     // sticky (default to false)
 
-    // if user is not admin, go over each schema property and clear it if it's not editable
+    // if user is not admin, go over each schema property and throw an error if it's not editable
     if (!hasAdminRights) {
       _.keys(post).forEach(function (propertyName) {
         var property = postSchemaObject[propertyName];
         if (!property || !property.autoform || !property.autoform.editable) {
-          console.log("// Disallowed property detected: "+propertyName+" (nice try!)");
-          delete post[propertyName]
+          console.log('//' + i18n.t('disallowed_property_detected') + ": " + propertyName);
+          throw new Meteor.Error("disallowed_property", i18n.t('disallowed_property_detected') + ": " + propertyName);
         }
       });
     }
@@ -451,13 +455,29 @@ Meteor.methods({
 
   editPost: function (post, modifier, postId) {
 
-    var user = Meteor.user();
+    var user = Meteor.user(),
+        hasAdminRights = isAdmin(user);
 
     // ------------------------------ Checks ------------------------------ //
 
     // check that user can edit
     if (!user || !can.edit(user, Posts.findOne(postId)))
       throw new Meteor.Error(601, i18n.t('sorry_you_cannot_edit_this_post'));
+
+    // if user is not admin, go over each schema property and throw an error if it's not editable
+    if (!hasAdminRights) {
+      // loop over each operation ($set, $unset, etc.)
+      _.each(modifier, function (operation) {
+        // loop over each property being operated on
+        _.keys(operation).forEach(function (propertyName) {
+          var property = postSchemaObject[propertyName];
+          if (!property || !property.autoform || !property.autoform.editable) {
+            console.log('//' + i18n.t('disallowed_property_detected') + ": " + propertyName);
+            throw new Meteor.Error("disallowed_property", i18n.t('disallowed_property_detected') + ": " + propertyName);
+          }
+        });
+      });
+    }
 
     // ------------------------------ Callbacks ------------------------------ //
 
