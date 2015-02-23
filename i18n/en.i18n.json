@@ -52,7 +52,11 @@
   "emailFooter": "Email Footer",
   "notes": "Notes",
   "debug": "Debug Mode",
-
+  "fontUrl": "Font URL",
+  "fontFamily": "Font Family",
+  "authMethods": "Authentication Methods",
+  "faviconUrl": "Favicon URL",
+  
   // Settings Fieldsets
   "general": "General",
   "invites": "Invites",
