@@ -26,7 +26,7 @@ meteorhacks:fast-render
 meteorhacks:subs-manager
 meteorhacks:npm
 
-aldeed:autoform@5.0.0
+aldeed:autoform@4.2.2
 aldeed:collection2
 aldeed:simple-schema
 
@@ -90,7 +90,7 @@ telescope-subscribe-to-posts
 telescope-tagline-banner
 
 # DataLook
-telescope-d4g
+telescope-datalook
 telescope-d4g-rss
 telescope-d4g-share
 jeremy:velocity-animate
