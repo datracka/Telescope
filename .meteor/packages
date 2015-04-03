@@ -95,9 +95,12 @@ telescope-sitemap
 telescope-messages
 
 # DataLook
-telescope-d4g
+telescope-datalook
 telescope-d4g-rss
 telescope-d4g-share
 jeremy:velocity-animate
+jeremy:selectize
+jeremy:autoform-selectize
 natestrauser:animate-css
 jeremy:segment.io
+telescope-plugin-hero
