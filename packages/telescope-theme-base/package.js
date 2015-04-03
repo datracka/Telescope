@@ -23,7 +23,6 @@ Package.onUse(function (api) {
       // specific
       'lib/client/scss/specific/_admin.scss',
       'lib/client/scss/specific/_avatars.scss',
-      'lib/client/scss/specific/_dropdown.scss',
       'lib/client/scss/specific/_errors.scss',
       'lib/client/scss/specific/_nav.scss',
       'lib/client/scss/specific/_layout.scss',
