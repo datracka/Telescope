@@ -44,10 +44,10 @@ npm-container
 matb33:collection-hooks
 djedi:sanitize-html
 rajit:bootstrap3-datepicker
-bengott:avatar
+bengott:avatar@0.7.6
 jparker:gravatar
 tap:i18n
-useraccounts:unstyled
+useraccounts:unstyled@1.8.1
 tsega:bootstrap3-datetimepicker@3.1.3_1
 momentjs:moment
 aslagle:reactive-table
@@ -87,12 +87,14 @@ telescope-notifications
 telescope-singleday
 telescope-invites
 telescope-post-by-feed
-# telescope-releases
-# telescope-getting-started
+telescope-releases
+telescope-getting-started
 telescope-subscribe-to-posts
 telescope-tagline-banner
+telescope-settings
 telescope-sitemap
 telescope-messages
+telescope-pages
 
 # DataLook
 telescope-datalook
