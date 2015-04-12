@@ -99,9 +99,13 @@ telescope-pages
 telescope-datalook
 telescope-d4g-rss
 telescope-d4g-share
+
 jeremy:velocity-animate
 jeremy:selectize
 jeremy:autoform-selectize
 jeremy:segment.io
 jeremy:telescope-plugin-hero
+
 natestrauser:animate-css
+msavin:mongol
+msavin:jetsetter
