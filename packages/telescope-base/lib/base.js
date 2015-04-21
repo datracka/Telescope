@@ -136,6 +136,11 @@ userMenu = [
     label: 'profile',
     description: 'view_your_profile'
   },
+  { //TODO set in D4G package
+    route: 'map',
+    label: 'Projects map',
+    description: 'Maps'
+  },
   {
     route: function () {
       return Router.path('user_edit', {slug: Meteor.user().slug});

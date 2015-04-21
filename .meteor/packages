@@ -96,7 +96,7 @@ telescope-messages
 telescope-pages
 
 # DataLook
-telescope-datalook
+#telescope-datalook
 telescope-d4g-rss
 telescope-d4g-share
 
@@ -109,3 +109,4 @@ jeremy:telescope-plugin-hero
 natestrauser:animate-css
 msavin:mongol
 msavin:jetsetter
+telescope-datalook

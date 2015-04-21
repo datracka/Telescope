@@ -1,0 +1,15 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "telescope-datalook": {
+        "path": "../telescope-datalook-fv"
+      }
+    },
+    "packages": {
+      "telescope-datalook": {
+        "path": "../telescope-datalook-fv"
+      }
+    }
+  }
+}

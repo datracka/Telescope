@@ -45,7 +45,7 @@ Template.post_edit.events({
     var post = this.post;
 
     e.preventDefault();
-
+    console.log("delete post");
     if(confirm("Are you sure?")){
       Router.go("/");
       Meteor.call("deletePostById", post._id, function(error) {
@@ -56,6 +56,9 @@ Template.post_edit.events({
           Messages.flash(i18n.t('your_post_has_been_deleted'), 'success');
         }
       });
+
+      //TODO move to package D4G
+      Meteor.call("deletePostByIdFromContextBroker", post._id);
     }
   }
 });
